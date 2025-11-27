@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("Fonts/LibreBaskerville-Regular.ttf") format("ttf");
+    font-weight: 400;
+} /*Fonten er hentet fra google fonts: https://fonts.google.com/specimen/Libre+Baskerville*/
+
+:root {
+    --neon-red: #ff3131;
+} /*Bruker denne fargen ganske mye så det var en fin variabel å ha */
+
+body {
+    background-color: black;
+    color:var(--neon-red);
+    overflow-x: hidden; /* Bruker overflow-x: hidden; her fordi jeg vil ha en begrenset ramme for bildene, og det er litt irriterende med vertikal skrolling */
+    font-family: "Libre Baskerville", serif;
+}
+
+.mainImageBox {
+    width: 99.4vw;
+    height: 25vh;
+    background-image: url("Images/mainImageBox.avif");
+    background-position: 0px 710px;
+    background-size: cover;
+    margin: auto;
+    border:var(--neon-red) solid 1px;
+}
+
+.mainTextBox {
+    text-align: center;
+    margin: auto;
+}
+
+#h1TextBox {
+    font-size: 9rem;
+    margin-top: 2vh;
+}
+
+#pTextBox {
+    font-size: 2.5rem;
+    margin-top: -9vh;
+}
+
+#h2TextBox {
+    font-size: 5rem;
+    margin-top: -2.5vh;
+} /*Brukte ID her istedenfor class fordi jeg forventet at dette skulle være en one-off ting, men kunne egentlig bare brukt class uansett*/
+
+.logoBox{
+    width: 75vw;
+    height: 25vh;
+    overflow: hidden;
+    margin: auto;
+    margin-top: -7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cyberpunkLogo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} /*Her passet object-fit contain best */
+
+.cyberwareLayout {
+    width: 99.4vw;
+    height: 70vh;             
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: 1fr 1.7fr;
+}
+
+
+.textCol {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border: 2px solid var(--neon-red);
+    padding: 1.5rem;
+}
+
+
+.cyberwareHeader {
+    font-size: 7rem;
+    margin: 0 0 1rem 0;
+    margin-left: 10vw;
+}
+
+.textCol p {
+    font-size: 1.4rem;
+}
+
+.pSplit {
+    width: 40vw;
+    margin-top: -10px;
+}
+
+
+/*Grid-seksjonen av koden her er generert av KI men jeg har flyttet på objektene selv.*/
+
+.mantisBladesImg {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    border: 2px solid var(--neon-red);
+}
+
+.mantisBladesImg Img {
+    object-position: 0px -8.2vh;
+}
+
+.gorillaArmsImg {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border: 2px solid var(--neon-red);
+}
+
+.gorillaArmsImg Img {
+    object-position: -1.5vw;
+}
+
+.plsImg {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border: 2px solid var(--neon-red);
+}
+
+.plsImg Img {
+    object-position: -2vw;
+}
+
+/* Her er en global bilde instilling for alle bildene i cyberware seksjonen */
+.cyberwareLayout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Mått gjøre denne større for den unike effekten. Her passet transform veldig bra. */
+.bigPls {
+    transform: scale(1.16);
+    transform-origin: bottom right;
+    width: 115%;
+    margin-left: -7vw;
+}
+
+/* Netrunners seksjon header */
+.netrunnersHeader {
+    font-size: 5.5rem;
+    margin: 0 0 1rem 0;
+    margin-left: 10vw;
+}
+
+/* Første del av paragrafet */
+.netrunnersP1 {
+    width: 40vw;
+    margin-top: -19vh; /*Her tar jeg den oppover for å passe bedre med headeren */
+    font-size: 1.7rem;
+}
+
+/* Andre del av paragrafet */
+.netrunnersP2 {
+    width: 60vw;
+    font-size: 1.7rem;
+}
+
+/* Intelligence bildet krevet en del justering for å få riktig, men det passer bra. */
+.intelligenceImg {
+    margin-left: 42vw;
+    display: inline-block;
+    margin-top: -9vh;
+}
+/* Her har jeg justert det manuelt for å få nøyaktig den størrelsen jeg vil ha. */
+.intelligenceImg Img{
+    width: 70%;
+    height: auto;
+}
+
+.deckline {
+    border: solid var(--neon-red) 1px;
+    width: 55vw;
+}
+
+.deckline img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Her er elementet justert for å passe på høyre side */
+.songbird {
+    position: absolute;
+    top: 125vh;
+    right: 0;
+    width: 39vw;
+    height: auto;
+    border-left: 2px solid var(--neon-red);
+    overflow: hidden;
+    margin-top: 88.9vh;
+}
+
+
+.songbird img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/*Brukte egentlig style her i HTML, men det var ikke lov så skrev det her istedenfor*/
+.hr1 {
+    margin-top: 40px; 
+    border: black 1px solid;
+}
+
+.hr2 {
+    border: var(--neon-red) 1px solid; 
+    margin-top: 41.1vh; 
+    width: 100vw;
+}
+
+/*Disse effektene nedenfor er brukt for å få teksten til å dukke opp progressivt på en vissuelt spennende måte*/
+.fade-in-normal{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.fade-in-slow{
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 1s;
+}
+
+.fade-in-fast {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+.fade-in-logo {
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
