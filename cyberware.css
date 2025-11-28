@@ -18,7 +18,7 @@ body {
 .mainImageBox {
     width: 99.4vw;
     height: 25vh;
-    background-image: url("Images/mainImageBox.avif");
+    background-image: url("Images/mainImageBox.avif"); /* Bildet er hentet fra https://www.reddit.com/r/cyberpunkgame/comments/u27hbb/cyberpunk_2077_developer_says_game_is_far_from/ */
     background-position: 0px 710px;
     background-size: cover;
     margin: auto;
@@ -188,7 +188,7 @@ body {
     height: 100%;
 }
 
-/* Her er elementet justert for å passe på høyre side */
+/* Her er elementet justert for å passe på høyre side, men den ser ofte litt rar ut når du endrer fra skjerm til skjerm... */
 .songbird {
     position: absolute;
     top: 125vh;
