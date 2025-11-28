@@ -83,11 +83,12 @@ body {
 .cyberwareHeader {
     font-size: 7rem;
     margin: 0 0 1rem 0;
-    margin-left: 10vw;
+    margin-left: 5vw;
 }
 
 .textCol p {
     font-size: 1.4rem;
+    margin-top: -2vh;
 }
 
 .pSplit {
@@ -160,7 +161,7 @@ body {
 
 /* Andre del av paragrafet */
 .netrunnersP2 {
-    width: 60vw;
+    width: 55vw;
     font-size: 1.7rem;
 }
 
@@ -196,7 +197,7 @@ body {
     height: auto;
     border-left: 2px solid var(--neon-red);
     overflow: hidden;
-    margin-top: 88.9vh;
+    margin-top: 86.2vh;
 }
 
 
